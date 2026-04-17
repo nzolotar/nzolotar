@@ -61,7 +61,7 @@ Daily **GitHub Copilot CLI** user. Actively exploring **Claude Code** and agenti
 
 ---
 
-## 🤖 2025- 2030 Goals - Agentic Engineering
+## 📚 2025- 2030 Goals - Agentic Engineering
 
 Transitioning into **AI-native full-stack development** - not data science, but engineering
 production-grade agentic systems that solve real business problems.
