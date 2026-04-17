@@ -1,6 +1,6 @@
 # Natalia Zolotareva | Senior Full-Stack Engineer
 
-### Building scalable .NET + React systems for healthcare & enterprise
+### .NET · SQL · Azure · React - Deep expertise across healthcare, fintech, and SaaS
 
 [![Email](https://img.shields.io/badge/Email-Work-red?style=flat&logo=gmail)](mailto:nzolotar@email.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/sql-net-react-ai/)
@@ -8,34 +8,67 @@
 
 ---
 
-## 🚀 What I Do
+## 🧠 What I Build
 
-Many years of full-stack engineering. I build production-grade systems in healthcare tech - job-matching engines, CI/CD pipelines, EF Core migrations, and third-party integrations at scale.
+Full-stack engineer with deep production experience. I design and deliver cloud-native systems - microservices, event-driven pipelines, and high-availability APIs - across regulated industries where correctness and uptime are non-negotiable.
 
-- **Reliability:** C#/.NET Core APIs serving real-time clinical workflows
-- **Scope:** React 18 / TypeScript frontends + Azure SQL backends
-- **Domain:** Healthcare staffing, compliance systems, SaaS platforms
+Currently at **Medical Solutions**, engineering healthcare staffing platforms (Pulse, SSP, MarketDevelopment) with distributed .NET backends, React frontends, and Azure cloud infrastructure.
 
 ---
 
-## 🛠 Core Stack
+## ⚙️ Core Stack
 
-**Backend:**
-![C#](https://img.shields.io/badge/C%23-.NET_Core-purple?style=flat&logo=dotnet)
-![SQL Server](https://img.shields.io/badge/SQL-Server-CC2927?style=flat&logo=microsoftsqlserver)
-![Azure](https://img.shields.io/badge/Azure-DevOps-0078D4?style=flat&logo=azuredevops)
+**Backend**
+![C#](https://img.shields.io/badge/C%23-.NET_Core_8-512BD4?style=flat&logo=dotnet)
+![Web API](https://img.shields.io/badge/Web_API-REST-512BD4?style=flat&logo=dotnet)
+![EF Core](https://img.shields.io/badge/EF_Core-ORM-512BD4?style=flat&logo=dotnet)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver)
 
-**Frontend:**
-![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react)
+**Cloud & Messaging**
+![Azure](https://img.shields.io/badge/Azure-Service_Bus-0078D4?style=flat&logo=microsoftazure)
+![Azure Functions](https://img.shields.io/badge/Azure-Functions-0078D4?style=flat&logo=microsoftazure)
+![Azure Blob](https://img.shields.io/badge/Azure-Blob_Storage-0078D4?style=flat&logo=microsoftazure)
+![App Config](https://img.shields.io/badge/Azure-App_Config_+_Key_Vault-0078D4?style=flat&logo=microsoftazure)
+
+**Frontend**
+![React](https://img.shields.io/badge/React-17%2F18-61DAFB?style=flat&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux)
 
-**Side Projects:**
-![Next.js](https://img.shields.io/badge/Next.js-Vercel-black?style=flat&logo=nextdotjs)
-![Supabase](https://img.shields.io/badge/Supabase-green?style=flat&logo=supabase)
+**Testing**
+![xUnit](https://img.shields.io/badge/xUnit-NUnit-512BD4?style=flat&logo=dotnet)
+![Jest](https://img.shields.io/badge/Jest-C21325?style=flat&logo=jest)
+![SpecFlow](https://img.shields.io/badge/SpecFlow-BDD-brightgreen?style=flat)
+![Coverage](https://img.shields.io/badge/Coverage-80%25+-success?style=flat)
 
 ---
 
-## 📌 Currently Building
+## 🎯 Specializations
 
-- **BenefitsWatchdog** - Benefits comparison SaaS (Next.js / Stripe / Supabase)
-- **BocaAgency** - Real estate analytics with GIS + MLS integrations
+- **Backend engineering** - C#/.NET Core 8, Web API, Entity Framework, iDesign architecture
+- **Event-driven systems** - Azure Service Bus, Functions, Blob, App Config, Key Vault
+- **Full-stack delivery** - React 17/18, TypeScript, Redux, component libraries
+- **Architecture patterns** - DDD, CQRS, microservices, legacy platform migrations
+- **Automated testing** - 80%+ coverage with xUnit, NUnit, Jest, SpecFlow
+- **High-availability cloud** - Azure-native, CI/CD via Azure DevOps, feature flags at scale
+
+---
+
+## 🤖 AI-Assisted Development
+
+Daily **GitHub Copilot** user. Actively exploring **Claude Code** and agentic workflows - building hands-on with MCP integrations and multi-agent patterns on personal projects. AI is part of my engineering toolkit, not a novelty.
+
+---
+
+## 🏭 Industries
+
+`Healthcare Staffing` `Banking` `Fintech` `Insurance` `Tax Compliance` `Payments` `SaaS`
+
+---
+
+## 🚧 Currently Building
+
+| Project | Stack | Focus |
+|---|---|---|
+| **BenefitsWatchdog** | Next.js, Supabase, Stripe | Benefits comparison SaaS with paywall |
+| **BocaAgency** | Next.js, GIS APIs, MLS | Real estate analytics + market data |
