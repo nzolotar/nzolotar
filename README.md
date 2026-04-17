@@ -2,7 +2,7 @@
 
 ### .NET · SQL · Azure · React - Deep expertise across healthcare, fintech, and SaaS
 
-[![Email](https://img.shields.io/badge/Email-Work-red?style=flat&logo=gmail)](mailto:nzolotar@email.com)
+[![Email](https://img.shields.io/badge/Email-Work-red?style=flat&logo=gmail)](mailto:nzolotar@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/sql-net-react-ai/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-green?style=flat)](https://www.zolotareva.com)
 
