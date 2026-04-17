@@ -47,9 +47,10 @@ Currently at **Medical Solutions**, engineering healthcare staffing platforms (P
 
 - **Backend engineering** - C#/.NET Core 8, Web API, Entity Framework, iDesign architecture
 - **Event-driven systems** - Azure Service Bus, Functions, Blob, App Config, Key Vault
-- **Full-stack delivery** - React 17/18, TypeScript, Redux, component libraries
+- **Full-stack delivery** - React 17/18, TypeScript, Redux, Styled Components, Material UI
+- **Component design** - Storybook-driven development, reusable design systems, microfrontends
 - **Architecture patterns** - DDD, CQRS, microservices, legacy platform migrations
-- **Automated testing** - 80%+ coverage with xUnit, NUnit, Jest, SpecFlow
+- **Automated testing** - 80%+ coverage with xUnit, NUnit, Jest, SpecFlow, RTL
 - **High-availability cloud** - Azure-native, CI/CD via Azure DevOps, feature flags at scale
 
 ---
