@@ -1,4 +1,4 @@
-# Natalia Zolotareva | Senior Full-Stack Engineer
+# Natalia Zolotareva | Senior Full-Stack Software Development Engineer
 
 ### .NET · SQL · Azure · React - Deep expertise across healthcare, fintech, and SaaS
 
