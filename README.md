@@ -2,9 +2,9 @@
 
 ### Building scalable .NET + React systems for healthcare & enterprise
 
-[![Email](https://img.shields.io/badge/Email-Work-red?style=flat&logo=gmail)](mailto:your@email.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/yourprofile)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-green?style=flat)](https://yoursite.com)
+[![Email](https://img.shields.io/badge/Email-Work-red?style=flat&logo=gmail)](mailto:nzolotar@email.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/sql-net-react-ai/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-green?style=flat)](https://www.zolotareva.com)
 
 ---
 
