@@ -57,7 +57,24 @@ Currently at **Medical Solutions**, engineering healthcare staffing platforms (P
 
 ## 🤖 AI-Assisted Development
 
-Daily **GitHub Copilot** user. Actively exploring **Claude Code** and agentic workflows - building hands-on with MCP integrations and multi-agent patterns on personal projects. AI is part of my engineering toolkit, not a novelty.
+Daily **GitHub Copilot CLI** user. Actively exploring **Claude Code** and agentic workflows - building hands-on with MCP integrations and multi-agent patterns on personal projects. AI is part of my engineering toolkit, not a novelty.
+
+---
+
+## 🤖 2025- 2030 Goals - Agentic Engineering
+
+Transitioning into **AI-native full-stack development** - not data science, but engineering
+production-grade agentic systems that solve real business problems.
+
+**Building toward:**
+- Designing and operating **multi-agent workflows** for business process automation
+- Implementing **document processing pipelines** - extraction, parsing, classification at scale
+- Building **agentic scheduling systems** that trigger, coordinate, and log business actions
+- Orchestrating **agent teams** using frameworks like LangGraph, AutoGen, or custom MCP stacks
+- Structuring **audit trails and logging** for agentic workflows in regulated industries
+
+My edge: deep backend architecture (.NET, Azure, SQL) + cloud infrastructure knowledge applied
+to agentic systems - not prompt engineering, but **engineering systems that run agents in production**.
 
 ---
 
