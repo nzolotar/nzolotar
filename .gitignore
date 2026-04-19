@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ConsoleApp/.vs/ConsoleApp/v16
+/.vs/Practice/v16
+/.vs
+/ConsoleApp/obj
+/ConsoleApp2/bin/Debug/net5.0
+/ConsoleApp2/obj
+/ConsoleApp_StackProblem/bin/Debug/net5.0
+/ConsoleApp_StackProblem/obj
+/ConsoleApp_StackProblem_TESTS/bin/Debug/net5.0
+/ConsoleApp_StackProblem_TESTS/obj
+/ConsoleApp_RemoveDuplicatesProblem_TESTS/bin/Debug/net5.0
+/ConsoleApp_RemoveDuplicatesProblem_TESTS/obj
