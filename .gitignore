@@ -2,6 +2,12 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+# Build artifacts
+**/obj/
+**/bin/
+**/.vs/
+
+# Legacy root-level entries (kept for reference)
 /ConsoleApp/.vs/ConsoleApp/v16
 /.vs/Practice/v16
 /.vs
