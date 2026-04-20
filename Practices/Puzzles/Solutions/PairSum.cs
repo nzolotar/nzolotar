@@ -7,6 +7,14 @@ public class PairSum : IPuzzle
 {
     public string Name => "Pair Sum";
     public string Description => "Find all pairs that sum to a target value";
+    public string Explanation =>
+        """
+        Sort the array, then place one pointer at the start and one at the end.
+        If the two values sum to the target — record the pair and move both pointers inward.
+        If the sum is too small — move the left pointer right to increase it.
+        If the sum is too large — move the right pointer left to decrease it.
+        Sorting guarantees each pair is printed in ascending order with no duplicates.
+        """;
 
     public void Run()
     {

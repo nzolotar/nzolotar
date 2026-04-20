@@ -8,6 +8,11 @@ List<IPuzzle> puzzles =
     new GroupAnagrams(),
     new TopKFrequent(),
     new PairSum(),
+    new ThreeOfAKind(),
+    new FizzBuzz(),
+    new ReverseString(),
+    new Palindrome(),
+    new FirstUniqueChar(),
 ];
 // ──────────────────────────────────────────────────────────────────────────
 
@@ -33,10 +38,13 @@ while (true)
 
     if (int.TryParse(input, out int choice) && choice >= 1 && choice <= puzzles.Count)
     {
+        var puzzle = puzzles[choice - 1];
         Console.Clear();
-        Console.WriteLine($"── {puzzles[choice - 1].Name} ──");
+        Console.WriteLine($"── {puzzle.Name} ──");
         Console.WriteLine();
-        puzzles[choice - 1].Run();
+        Console.WriteLine(puzzle.Explanation);
+        Console.WriteLine();
+        puzzle.Run();
     }
     else
     {

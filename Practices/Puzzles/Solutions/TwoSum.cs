@@ -8,6 +8,13 @@ public class TwoSum : IPuzzle
 {
     public string Name => "Two Sum";
     public string Description => "LC #1 — indices of two numbers that sum to target";
+    public string Explanation =>
+        """
+        Use a hash map to store each number and its index as you iterate.
+        For every number, check if its complement (target - current) is already in the map.
+        If yes — you found the pair. If no — store the current number and move on.
+        This avoids the O(n²) brute force of checking every pair.
+        """;
 
     public void Run()
     {

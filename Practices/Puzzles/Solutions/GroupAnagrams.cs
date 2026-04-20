@@ -8,6 +8,12 @@ public class GroupAnagrams : IPuzzle
 {
     public string Name => "Group Anagrams";
     public string Description => "LC #49 — group strings that are anagrams of each other";
+    public string Explanation =>
+        """
+        Two words are anagrams if they contain the same letters — so sorting their characters
+        produces the same string. Use that sorted version as a grouping key.
+        Words that map to the same key are anagrams of each other.
+        """;
 
     public void Run()
     {

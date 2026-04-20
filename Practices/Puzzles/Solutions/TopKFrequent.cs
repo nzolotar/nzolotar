@@ -8,6 +8,12 @@ public class TopKFrequent : IPuzzle
 {
     public string Name => "Top K Frequent";
     public string Description => "LC #347 — k most frequent elements";
+    public string Explanation =>
+        """
+        Build a frequency map by grouping identical values together and counting each group.
+        Sort the groups by count descending, take the first k, and return their keys.
+        Same frequency map pattern as Three of a Kind — just ordered and sliced instead of filtered.
+        """;
 
     public void Run()
     {

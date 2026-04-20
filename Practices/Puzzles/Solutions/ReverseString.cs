@@ -1,0 +1,40 @@
+namespace Puzzles.Solutions;
+
+// Reverse a string without Reverse().
+// Approach: iterate from the last character to the first, appending each to a StringBuilder.
+// O(n) time, O(n) space.
+public class ReverseString : IPuzzle
+{
+    public string Name => "Reverse String";
+    public string Description => "Reverse a string without using Reverse()";
+    public string Explanation =>
+        """
+        Walk the string from the last index down to 0, appending each character to a StringBuilder.
+        Reading backwards and writing forwards produces the reversed string.
+
+        Why StringBuilder over string concatenation?
+        Strings in C# are immutable — result += s[i] allocates a brand new string on every iteration,
+        copying all previously accumulated characters each time. That's O(1 + 2 + ... + n) = O(n²) allocations.
+        StringBuilder maintains a resizable internal buffer and only allocates when that buffer is full,
+        making the whole loop O(n). For short strings the difference is negligible;
+        for long ones it's the difference between fast and unusably slow.
+        """;
+
+    public void Run()
+    {
+        Console.WriteLine(Solve("hello"));    // olleh
+        Console.WriteLine(Solve("abcde"));    // edcba
+        Console.WriteLine(Solve("a"));        // a
+        Console.WriteLine(Solve(""));         // (empty)
+    }
+
+    private static string Solve(string s)
+    {
+        var result = new System.Text.StringBuilder();
+
+        for (int i = s.Length - 1; i >= 0; i--)
+            result.Append(s[i]);
+
+        return result.ToString();
+    }
+}
