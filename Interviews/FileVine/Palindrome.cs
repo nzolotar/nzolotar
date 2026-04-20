@@ -8,7 +8,7 @@
  *   Example: "Draw, o coward!" → true  (punctuation and spaces stripped → "drawocoward")
  */
 
-namespace filevine_code_challenge;
+namespace code_challenge;
 
 public static class Palindrome
 {

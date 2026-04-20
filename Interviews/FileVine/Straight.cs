@@ -9,7 +9,7 @@
  *     [6,2,3,5,1] → false  (no run of four consecutive integers exists)
  */
 
-namespace filevine_code_challenge;
+namespace code_challenge;
 
 public static class Straight
 {

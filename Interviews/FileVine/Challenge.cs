@@ -15,7 +15,7 @@
  *     [-1,2,3,-1,-1] → 5   (-1 appears 3 times; sum of positives = 2+3)
  */
 
-namespace filevine_code_challenge;
+namespace code_challenge;
 public static class Challenge
 {
     /// <summary>
