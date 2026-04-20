@@ -28,8 +28,7 @@ public sealed class InMemoryDeduplicator : IDeduplicator
 
     public Task<bool> IsDuplicateAsync(string messageId, CancellationToken ct = default)
     {
-        bool exists = _cache.TryGetValue(CacheKey(messageId), out _);
-        return Task.FromResult(exists);
+        return Task.FromResult(_cache.TryGetValue(CacheKey(messageId), out _));
     }
 
     public Task MarkProcessedAsync(string messageId, CancellationToken ct = default)
