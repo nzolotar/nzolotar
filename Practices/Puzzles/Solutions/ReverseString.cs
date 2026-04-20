@@ -18,23 +18,33 @@ public class ReverseString : IPuzzle
         StringBuilder maintains a resizable internal buffer and only allocates when that buffer is full,
         making the whole loop O(n). For short strings the difference is negligible;
         for long ones it's the difference between fast and unusably slow.
+
+        Performance:
+          Time:  O(n) — one pass through the string.
+          Space: O(n) — the StringBuilder holds a full copy of the input.
         """;
 
     public void Run()
     {
-        Console.WriteLine(Solve("hello"));    // olleh
-        Console.WriteLine(Solve("abcde"));    // edcba
-        Console.WriteLine(Solve("a"));        // a
-        Console.WriteLine(Solve(""));         // (empty)
+        string[] inputs = ["hello", "abcde", "a", ""];
+
+        Console.WriteLine("StringBuilder:");
+        foreach (var s in inputs)
+            Console.WriteLine($"  \"{s}\" → \"{Solve(s)}\"");
+
+        Console.WriteLine("\nLINQ (note: uses Enumerable.Reverse, not string.Reverse):");
+        foreach (var s in inputs)
+            Console.WriteLine($"  \"{s}\" → \"{SolveLinq(s)}\"");
     }
 
     private static string Solve(string s)
     {
         var result = new System.Text.StringBuilder();
-
         for (int i = s.Length - 1; i >= 0; i--)
             result.Append(s[i]);
-
         return result.ToString();
     }
+
+    // Concise — Enumerable.Reverse iterates chars backwards, new string() reassembles them
+    private static string SolveLinq(string s) => new string(s.Reverse().ToArray());
 }

@@ -14,13 +14,24 @@ public class TwoSum : IPuzzle
         For every number, check if its complement (target - current) is already in the map.
         If yes — you found the pair. If no — store the current number and move on.
         This avoids the O(n²) brute force of checking every pair.
+
+        Performance:
+          Time:  O(n) — single pass through the array.
+          Space: O(n) — up to n entries in the hash map.
         """;
 
     public void Run()
     {
-        Console.WriteLine(string.Join(", ", Solve([2, 7, 11, 15], 9)));  // 0, 1
-        Console.WriteLine(string.Join(", ", Solve([3, 2, 4], 6)));       // 1, 2
-        Console.WriteLine(string.Join(", ", Solve([3, 3], 6)));          // 0, 1
+        int[][] cases = [[2, 7, 11, 15], [3, 2, 4], [3, 3]];
+        int[] targets = [9, 6, 6];
+
+        Console.WriteLine("Hash map — O(n):");
+        for (int t = 0; t < cases.Length; t++)
+            Console.WriteLine($"  [{string.Join(", ", Solve(cases[t], targets[t]))}]");
+
+        Console.WriteLine("\nLINQ — O(n²):");
+        for (int t = 0; t < cases.Length; t++)
+            Console.WriteLine($"  [{string.Join(", ", SolveLinq(cases[t], targets[t]))}]");
     }
 
     private static int[] Solve(int[] nums, int target)
@@ -34,4 +45,12 @@ public class TwoSum : IPuzzle
         }
         return [];
     }
+
+    // Shorter but O(n²) — checks every pair
+    private static int[] SolveLinq(int[] nums, int target) =>
+        Enumerable.Range(0, nums.Length)
+                  .SelectMany(i => Enumerable.Range(i + 1, nums.Length - i - 1)
+                                             .Where(j => nums[i] + nums[j] == target)
+                                             .Select(j => new[] { i, j }))
+                  .FirstOrDefault() ?? [];
 }

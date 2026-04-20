@@ -15,27 +15,62 @@ public class FirstUniqueChar : IPuzzle
         Why two passes and not one?
         On a single pass you don't yet know if a character repeats later in the string.
         You need the full picture before you can judge uniqueness.
+
+        Performance:
+          Time:  O(n) — two linear passes, each O(n).
+          Space: O(1) — the map holds at most 128 entries for ASCII,
+                        or O(k) for k unique characters in an arbitrary character set.
         """;
 
     public void Run()
     {
-        foreach (var s in (string[])["leetcode", "loveleet", "aabb", "z"])
+        string[] inputs = ["leetcode", "loveleet", "aabb", "z"];
+
+        Console.WriteLine("Two-pass dictionary:");
+        foreach (var s in inputs)
         {
             int i = Solve(s);
+            Console.WriteLine($"  \"{s}\" → {(i >= 0 ? $"{i} ('{s[i]}')" : "-1")}");
+        }
+
+        Console.WriteLine("\nLINQ:");
+        foreach (var s in inputs)
+        {
+            int i = SolveLinq(s);
             Console.WriteLine($"  \"{s}\" → {(i >= 0 ? $"{i} ('{s[i]}')" : "-1")}");
         }
     }
 
     private static int Solve(string s)
     {
-        var freq = new Dictionary<char, int>();
-        foreach (char c in s)
-            freq[c] = freq.GetValueOrDefault(c) + 1;
+        Dictionary<char, int> counts = new Dictionary<char, int>();
 
+        // Step 1: Count occurrences
+        foreach (char c in s)
+        {
+            if (counts.ContainsKey(c))
+                counts[c]++;
+            else
+                counts[c] = 1;
+        }
+
+        // Step 2: Find the first index with a count of 1
         for (int i = 0; i < s.Length; i++)
-            if (freq[s[i]] == 1)
+        {
+            if (counts[s[i]] == 1)
+            {
                 return i;
+            }
+        }
 
         return -1;
+    }
+
+    // Find the first char with count 1, then locate its index — O(n) but two scans via LINQ
+    private static int SolveLinq(string s)
+    {
+        var unique = s.GroupBy(c => c).Where(g => g.Count() == 1).Select(g => g.Key).ToHashSet();
+        var match = s.Select((c, i) => (c, i)).FirstOrDefault(x => unique.Contains(x.c));
+        return match == default ? -1 : match.i;
     }
 }

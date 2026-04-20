@@ -9,12 +9,18 @@ public class Palindrome : IPuzzle
         """
         Option 1 — Reverse and compare:
         Normalize (lowercase, strip spaces), reverse into a StringBuilder, compare to the original.
-        Simple to read. O(n) time, O(n) space — the reversed string is a full copy.
+        Simple to read.
 
         Option 2 — Two pointers:
-        Skip normalization into a new string. Walk inward from both ends of the original,
-        skipping spaces and comparing characters case-insensitively in place.
-        O(n) time, O(1) extra space — nothing is allocated.
+        Normalize first, then walk inward from both ends comparing characters.
+        No reversal needed — if every mirrored pair matches, it's a palindrome.
+
+        Performance:
+          Option 1 — Time: O(n)  Space: O(n) — reversed string is a full copy of the input.
+          Option 2 — Time: O(n)  Space: O(n) — normalized string is still a full copy.
+
+        Note: true O(1) space would require skipping spaces inline without normalizing first,
+        so the pointers hop over spaces directly on the original string.
         """;
 
     public void Run()
@@ -32,9 +38,14 @@ public class Palindrome : IPuzzle
             Console.WriteLine($"  \"{s}\" → {SolveWithReverse(s)}");
 
         Console.WriteLine();
-        Console.WriteLine("Option 2 — two pointers, O(1) space:");
+        Console.WriteLine("Option 2 — two pointers:");
         foreach (var s in inputs)
             Console.WriteLine($"  \"{s}\" → {SolveWithTwoPointers(s)}");
+
+        Console.WriteLine();
+        Console.WriteLine("Option 3 — LINQ SequenceEqual:");
+        foreach (var s in inputs)
+            Console.WriteLine($"  \"{s}\" → {SolveLinq(s)}");
     }
 
     // O(n) time, O(n) space
@@ -47,6 +58,13 @@ public class Palindrome : IPuzzle
             reversed.Append(cleaned[i]);
 
         return reversed.ToString() == cleaned;
+    }
+
+    // Cleanest LINQ version — SequenceEqual compares cleaned string to its reverse
+    private static bool SolveLinq(string input)
+    {
+        string cleaned = input.ToLower().Replace(" ", "");
+        return cleaned.SequenceEqual(cleaned.Reverse());
     }
 
     // O(n) time, O(1) extra space

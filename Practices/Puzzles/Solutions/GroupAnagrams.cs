@@ -13,6 +13,10 @@ public class GroupAnagrams : IPuzzle
         Two words are anagrams if they contain the same letters — so sorting their characters
         produces the same string. Use that sorted version as a grouping key.
         Words that map to the same key are anagrams of each other.
+
+        Performance:
+          Time:  O(n · k log k) — each of the n words is sorted by its k characters.
+          Space: O(n · k) — storing all words and their sorted keys.
         """;
 
     public void Run()

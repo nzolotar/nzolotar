@@ -11,6 +11,10 @@ public class ThreeOfAKind : IPuzzle
         """
         Group the numbers by value to build a frequency map, then filter to groups
         whose count is exactly 3. One LINQ chain — GroupBy, Where, Select.
+
+        Performance:
+          Time:  O(n) — one pass to build the map, one pass to filter.
+          Space: O(k) — where k is the number of distinct values (k ≤ n).
         """;
 
     public void Run()

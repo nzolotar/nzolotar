@@ -13,6 +13,10 @@ public class TopKFrequent : IPuzzle
         Build a frequency map by grouping identical values together and counting each group.
         Sort the groups by count descending, take the first k, and return their keys.
         Same frequency map pattern as Three of a Kind — just ordered and sliced instead of filtered.
+
+        Performance:
+          Time:  O(n log n) — dominated by sorting the frequency groups.
+          Space: O(n) — frequency map holds up to n distinct values.
         """;
 
     public void Run()
